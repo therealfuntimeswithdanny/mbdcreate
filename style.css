@@ -1,0 +1,186 @@
+/* ========= BASE RESET ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --accent: red;
+  --purple: rgb(171, 70, 254);
+}
+
+/* ========= HEADER ========= */
+header.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 2px solid white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.brand {
+  font-size: 22px;
+}
+.copyright {
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+.nav .btn {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.nav .btn:hover {
+  color: var(--accent);
+}
+
+/* ========= HERO SECTION (Section 1) ========= */
+.hero {
+  background: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px; /* offset for fixed header */
+}
+.hero-text {
+  text-align: center;
+}
+.mbd {
+  font-size: clamp(40px, 8vw, 100px);
+  margin-bottom: 20px;
+}
+.title {
+  font-size: clamp(80px, 15vw, 180px);
+  margin-bottom: 20px;
+  font-family: 'Irish Grover', cursive;
+}
+.tagline {
+  font-size: 20px;
+  color: var(--accent);
+}
+
+design {
+    font-family: 'Irish Grover', cursive
+}
+/* ========= DESIGN SECTION (Section 2) ========= */
+.design-section {
+  background: var(--accent);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 40px 40px;
+}
+.design-text {
+  max-width: 800px;
+}
+.design-title {
+  font-size: clamp(60px, 12vw, 140px);
+  margin-bottom: 20px;
+}
+.design-sub {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+/* ========= ABOUT SECTION (Section 3) ========= */
+.about-section {
+  min-height: 100vh;
+  background: var(--purple);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+.about-title {
+  font-size: clamp(50px, 10vw, 120px);
+  margin-bottom: 20px;
+}
+.about-desc {
+  font-size: 20px;
+  max-width: 700px;
+}
+
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .design-section,
+  .sites-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-nav {
+    flex-direction: row;
+    writing-mode: horizontal-tb;
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+  .side-text {
+    transform: rotate(0);
+  }
+  .side-nav .arrow.up,
+  .side-nav .arrow.down {
+    border: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+/* Import Irish Grover font */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #a844f4; /* purple background */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer-right .footer-brand {
+  font-family: 'Irish Grover', cursive;
+  font-size: 28px;
+  font-weight: normal;
+}
