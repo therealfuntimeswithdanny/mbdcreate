@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MBD Design</title>
-  <link rel="stylesheet" href="style.css"/>
+<title>Made by Danny UK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script><style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+body {
+  background-color: #f44336;
+}
+</style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="top">
-    <div class="brand-wrap">
-      <div class="brand">Made by Danny UK</div>
-      <div class="copyright">by Daniel Morrisey</div>
-    </div>
-    <nav class="nav">
-      <a href="#section1" class="btn">Home</a>
-      <design><a href="#section2" class="btn">Design</a></design>
-      <a href="#section3" class="btn">About</a>
-    </nav>
-  </header>
 
-  <!-- SECTION 1 (hero) -->
-  <section id="section1" class="hero">
-    <div class="hero-text">
-      <h2 class="mbd">MBD</h2>
-      <h1 class="title">Design</h1>
-      <p class="tagline">A Small Site <design>Design</design> Company Built &amp; Ran by Daniel Morrisey</p>
-    </div>
-  </section>
-
-  <!-- SECTION 2 (Design red) -->
-  <section id="section2" class="design-section">
-    <div class="design-text">
-      <h1 class="design-title"><design>Design</design></h1>
-      <p class="design-sub">
-        <design>Design</design> is everything, your site may have awesome features <br/>
-        but if it looks like $h!t, is anyone going to use it? <br/>
-      </p>
-    </div>
-  </section>
-
-
-  <!-- SECTION 3 placeholder (About) -->
-  <section id="section3" class="about-section">
-    <h1 class="about-title">About MBD <design>Design</design></h1>
-    <p class="about-desc">Started in June of 2024 MBD (now known as MBD <design>Design</design>) is a company ran by one that makes real sites that real people will visit</p>
-  </section>
-
-  <!-- SECTION 3 apple -->
-  <section class="quote-section">
-    <p class="about-desc">"Give People wonderful tools, and they'll do wonderful things" <br> - Steve Jobs</p>
-  </section>
-
-<footer class="footer">
-  <div class="footer-left">
-    <p>Copyright Made by Danny UK<br>by Daniel Morrisey</p>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="https://www.threads.com/@madebydanny.uk" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa-brands fa-threads"></i></a>
+    <a href="https://bsky.app/profile/danielmorrisey.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa-brands fa-bluesky"></i></a>
+    <a href="https://mastodon.social/deck/@danielmorrisey" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa-brands fa-mastodon"></i></a>
+    <a href="https://github.com/therealfuntimeswithdanny" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa-brands fa-github"></i></a>
   </div>
-  <div class="footer-right">
-    <span class="footer-brand">MBD Design</span>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="https://www.threads.com/@madebydanny.uk" class="w3-bar-item w3-button w3-padding-large"><i class="fa-brands fa-threads"></i></a>
+    <a href="https://bsky.app/profile/danielmorrisey.com" class="w3-bar-item w3-button w3-padding-large"><i class="fa-brands fa-bluesky"></i></a>
+    <a href="https://mastodon.social/deck/@danielmorrisey" class="w3-bar-item w3-button w3-padding-large"><i class="fa-brands fa-mastodon"></i></a>
+    <a href="https://github.com/therealfuntimeswithdanny" class="w3-bar-item w3-button w3-padding-large"><i class="fa-brands fa-github"></i></a>
   </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Hi, I'm Danny</h1>
+  <p class="w3-xlarge">TI build websites and apps, you find more work @</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="https://danielmorrisey.com">danielmorrisey.com</a></button>
+</header>
+
+<div class="w3-container w3-red w3-center">
+    <h1 class="w3-margin w3-xlarge">“Give people wonderful tools, and they’ll do wonderful things”  - Steve Jobs</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-red w3-center">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.threads.com/@madebydanny.uk" class="w3-hover-text-white"><i class="fa-brands fa-threads"></i></a>
+    <a href="https://bsky.app/profile/danielmorrisey.com" class="w3-hover-text-white"><i class="fa-brands fa-bluesky"></i></a>
+    <a href="https://mastodon.social/deck/@danielmorrisey" class="w3-hover-text-white"><i class="fa-brands fa-mastodon"></i></a>
+    <a href="https://github.com/therealfuntimeswithdanny" class="w3-hover-text-white"><i class="fa-brands fa-github"></i></a>
+ </div>
 </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
